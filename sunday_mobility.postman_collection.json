@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "dd078d9f-68c4-4fc4-8343-6bf93479dd2a",
+		"name": "sunday_mobility",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8000/user/create-user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "dshfshfkhsadkhfk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"kundan@gmail.com\",\n    \"password\": \"hfdjkhjhsdhf\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/user/create-user",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"create-user"
+					]
+				},
+				"description": "Create user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/user/get-user/602d5397afbc79e597c0f81d",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imt1bmRhbkBnbWFpbC5jb20iLCJwYXNzd29yZCI6ImhmZGpraGpoc2RoZiIsImlhdCI6MTYxMzU4MzI1NX0.gmb4J4nInhR7YT--g-al1Sd6y9C2SvW8yqgwpDW34Jw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/user/get-user/602d5397afbc79e597c0f81d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"get-user",
+						"602d5397afbc79e597c0f81d"
+					]
+				},
+				"description": "Get user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/user/get-all-user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imt1bmRhbkBnbWFpbC5jb20iLCJwYXNzd29yZCI6ImhmZGpraGpoc2RoZiIsImlhdCI6MTYxMzU4MzI1NX0.gmb4J4nInhR7YT--g-al1Sd6y9C2SvW8yqgwpDW34Jw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/user/get-all-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"get-all-user"
+					]
+				},
+				"description": "Get all users"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/user/delete-user/602d5397afbc79e597c0f81d",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "dfhsdhfhasdhuvhafdskfnvd",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/user/delete-user/602d5397afbc79e597c0f81d",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"delete-user",
+						"602d5397afbc79e597c0f81d"
+					]
+				},
+				"description": "Delete user"
+			},
+			"response": []
+		}
+	]
+}
